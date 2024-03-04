@@ -44,9 +44,10 @@
     console.log("Clicked");
     score++;
     document.getElementById("scoreSpan").innerHTML = score;
-    localStorage.setItem('scoreSpan', score.value)
+    localStorage.setItem('scoreSpan', score)
   }
   if(localStorage.getItem('scoreSpan') !== null) {
-     score = localStorage.getItem('scoreSpan')
+    score = localStorage.getItem('scoreSpan');
+    document.getElementById('scoreSpan').innerHTML = score;
   }
 </script>
