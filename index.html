@@ -44,5 +44,9 @@
     console.log("Clicked");
     score++;
     document.getElementById("scoreSpan").innerHTML = score;
+    localStorage.setItem('local', score.value)
+  }
+  if(localStorage.getItem('local') !== null) {
+     score = localStorage.getItem('local')
   }
 </script>
