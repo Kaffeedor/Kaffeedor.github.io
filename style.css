@@ -41,14 +41,17 @@ li {
 
 a:link {
   color: #EBE53D;
+  text-decoration: none; 
 }
 
 a:visited {
   color: #9E9909;
+  text-decoration: none; 
 }
 
 a:hover {
   color: #823DEB;
+  text-decoration: none; 
 }
 
 table, th, td {
