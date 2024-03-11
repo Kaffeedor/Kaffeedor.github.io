@@ -127,8 +127,23 @@ hr {
 	height:30%;
 }
 
-.navbar h3 {
+.navbar a:link {
+  	color: #EBE53D;
 	text-align: left;
-	color: #e64093;
+  	text-decoration: none;
+	font-size: 24px;
+}
+
+.navbar a:visited {
+  	color: #9E9909;
+	text-align: left;
+  	text-decoration: none;
+	font-size: 24px;
+}
+
+.navbar a:hover {
+  	color: #823DEB;
+	text-align: left;
+  	text-decoration: none;
 	font-size: 24px;
 }
