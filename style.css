@@ -123,8 +123,8 @@ hr {
 
 .navbar img {
 	align: left;
-	width:30%;
-	height:30%;
+	width: "120px";
+	height: "76px";
 }
 
 .navbar a:link {
