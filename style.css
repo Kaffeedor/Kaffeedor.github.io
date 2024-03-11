@@ -112,16 +112,16 @@ hr {
 
 .navbar {
 	align:center;
-	width: 100%;
-  	border: 2px solid black;
- 	padding: 50px;
- 	margin: 20px;
+	width: 50%;
+  	border: 7px solid black;
+ 	padding: 19px;
+ 	margin: 12px;
 }
 
 .navbar img {
 	align: left;
-	width: 8px;
-	height: 4px;
+	width: 30px;
+	height: 19px;
 }
 
 .navbar p {
