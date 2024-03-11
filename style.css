@@ -107,7 +107,7 @@ hr {
 	line-height: 50px;
 	text-align: center;
 	transform:translateX(100%);
-	animation: cssmarquee 10s linear infinite;
+	animation: header p 10s linear infinite;
 }
 
 @keyframes header p {
