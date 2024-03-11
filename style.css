@@ -120,9 +120,12 @@ hr {
 -------------Navbar-------------
 */
 
-.navbar { }
+.navbar {
+	text-align: left;
+}
 
 .navbar img {
+	align: left;
 	width:"120px";
 	height:"76px";
 }
