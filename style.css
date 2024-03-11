@@ -118,6 +118,10 @@ hr {
 	height: "4px";
 }
 
+.navbar p {
+	color: #131313;
+}
+
 .navbar a:link {
   	color: #EBE53D;
 	text-align: left;
