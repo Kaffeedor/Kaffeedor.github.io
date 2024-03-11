@@ -108,24 +108,24 @@ hr {
 }
 
 @keyframes header p {
-	0% {
-		transform: translateX(100%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
+	0% { transform: translateX(100%); }
+	100% { transform: translateX(-100%);}
 }
 
 /*
 -------------Navbar-------------
 */
 
-.navbar {
-	text-align: left;
-}
+.navbar { }
 
 .navbar img {
 	align: left;
-	width:"120px";
-	height:"76px";
+	width:30%;
+	height:30%;
+}
+
+.navbar h3 {
+	text-align: left;
+	color: #e64093;
+	font-size: 24px;
 }
