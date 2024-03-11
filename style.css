@@ -110,12 +110,18 @@ hr {
 -------------Navbar-------------
 */
 
-.navbar { }
+.navbar {
+	align:center;
+	width: 100%;
+  	border: 2px solid black;
+ 	padding: 50px;
+ 	margin: 20px;
+}
 
 .navbar img {
 	align: left;
-	width: "8px";
-	height: "4px";
+	width: 8px;
+	height: 4px;
 }
 
 .navbar p {
