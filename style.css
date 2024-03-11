@@ -10,6 +10,10 @@ colors:
 #995ef2
 */
 
+/*
+-------------General/Default-------------
+*/
+
 body {
   background-color:#202020;
 }
@@ -69,9 +73,13 @@ hr {
 */
 
 .header {
-height: 50px;
-overflow: hidden;
-position: relative;
+	position: relative;
+	overflow: hidden;
+}
+
+.header img {
+	width:"100%";
+	height:"160px";
 }
 
 .header h1 {
@@ -106,4 +114,15 @@ position: relative;
 	100% {
 		transform: translateX(-100%);
 	}
+}
+
+/*
+-------------Navbar-------------
+*/
+
+.navbar { }
+
+.navbar img {
+	width:"120px";
+	height:"76px";
 }
