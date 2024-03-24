@@ -158,6 +158,10 @@ hr {
 	align:center
 }
 
+.footer hr {
+ color: #9E9909
+}
+
 #redbutton {
 	width: 20px;
 	height: 20px;
