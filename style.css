@@ -126,6 +126,8 @@ hr {
 
 .navbar p {
 	color: #131313;
+	display: inline;
+	vertical-align: middle;
 }
 
 .navbar a:link {
