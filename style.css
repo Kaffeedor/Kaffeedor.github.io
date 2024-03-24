@@ -111,6 +111,7 @@ hr {
   	text-decoration: none;
 	font-size: 24px;
   	border: 1px solid #808080;
+	width: 30%:
  	padding: 19px;
  	margin: 12px;
 }
@@ -125,6 +126,13 @@ hr {
 	color: hotpink;
 	display: inline;
 	vertical-align: middle;
+}
+
+.navbar span {
+	color: hotpink;
+	display: inline;
+	vertical-align: middle;
+	border: 1px solid #808080;
 }
 
 .navbar a {
