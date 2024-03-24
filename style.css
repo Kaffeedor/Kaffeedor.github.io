@@ -127,6 +127,9 @@ hr {
 	vertical-align: middle;
 }
 
+.navbar a {
+	font-size: 24px;
+}
 .navbar a:link {
   	color: #EBE53D;
 }
