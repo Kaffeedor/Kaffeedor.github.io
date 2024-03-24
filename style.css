@@ -157,11 +157,8 @@ hr {
 	color: #9E9909
 }
 
-.footer img {
-	display:inline
-}
-
 #redbutton {
+	display:inline
 	width: 20px;
 	height: 20px;
 }
