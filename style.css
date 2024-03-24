@@ -135,8 +135,8 @@ hr {
 	display: inline;
 	vertical-align: middle;
 	border: 1px solid #202020;
-	padding: 2px;
-	margin: 3px;
+	padding: 5px;
+	margin: 5px;
 }
 
 .navbar a {
@@ -163,6 +163,10 @@ hr {
 .footer {
 	align: center
 	text-align: center
+	margin: auto;
+  	width: 50%;
+  	border: none;
+  	padding: 10px;
 }
 
 .footer p {
