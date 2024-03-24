@@ -9,7 +9,7 @@ function zoomin(img_id, zoom_val){
     myImg.style.width = (currWidth - zoom_val) + "px";
 }
 
-function zoomout(img_id), zoom_val{
+function zoomout(img_id, zoom_val){
     var myImg = document.getElementById(img_id);
     var currWidth = myImg.clientWidth;
     myImg.style.width = (currWidth + zoom_val) + "px";
