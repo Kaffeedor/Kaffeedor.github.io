@@ -113,7 +113,7 @@ hr {
 .navbar {
 	align:center;
 	width: 50%;
-  	border: 7px solid black;
+  	border: 1px solid hotpink;
  	padding: 19px;
  	margin: 12px;
 }
