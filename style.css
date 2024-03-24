@@ -154,7 +154,11 @@ hr {
 }
 
 .footer hr {
- color: #9E9909
+	color: #9E9909
+}
+
+.footer img {
+	display:inline
 }
 
 #redbutton {
