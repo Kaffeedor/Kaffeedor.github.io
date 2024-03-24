@@ -176,6 +176,8 @@ hr {
 }
 
 .footer hr {
+	align: center
+	text-align: center
 	color: #9E9909
 }
 
