@@ -107,6 +107,9 @@ hr {
 
 .navbar {
 	align:center;
+	text-align: center;
+  	text-decoration: none;
+	font-size: 24px;
   	border: 1px solid #808080;
  	padding: 19px;
  	margin: 12px;
@@ -126,23 +129,14 @@ hr {
 
 .navbar a:link {
   	color: #EBE53D;
-	text-align: left;
-  	text-decoration: none;
-	font-size: 24px;
 }
 
 .navbar a:visited {
   	color: #9E9909;
-	text-align: left;
-  	text-decoration: none;
-	font-size: 24px;
 }
 
 .navbar a:hover {
   	color: #823DEB;
-	text-align: left;
-  	text-decoration: none;
-	font-size: 24px;
 }
 
 /*
@@ -150,7 +144,8 @@ hr {
 */
 
 .footer {
-	align:center
+	align: center
+	text-align: center
 }
 
 .footer hr {
