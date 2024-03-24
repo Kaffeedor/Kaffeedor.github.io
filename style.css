@@ -120,6 +120,8 @@ hr {
 	align: left;
 	width: 60px;
 	height: 38px;
+	display: inline;
+	vertical-align: middle;
 }
 
 .navbar p {
@@ -138,6 +140,8 @@ hr {
 }
 
 .navbar a {
+	display: inline;
+	vertical-align: middle;
 	font-size: 24px;
 }
 .navbar a:link {
