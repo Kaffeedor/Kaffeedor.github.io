@@ -1,15 +1,3 @@
-var load_in = false;
-var score = 0;
-
-if (load_in == false) {
-  load_in = true;
-  if (localStorage.getItem('scoreSpan') !== null) {
-    score = localStorage.getItem('scoreSpan');
-    document.getElementById('scoreSpan').innerHTML = score;
-  }
-}
-
-
 // code functions
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -29,6 +17,7 @@ function zoomout(img_id), zoom_val{
 
 
 // website functions
+var score = 0;
 function clicked() {
   score++;
   document.getElementById("scoreSpan").innerHTML = score;
@@ -36,4 +25,16 @@ function clicked() {
   zoomin("redbutton", 3);
   sleep(50);
   zoomout("redbutton", 3);
+}
+
+
+// load in
+var load_in = false;
+
+if (load_in == false) {
+  load_in = true;
+  if (localStorage.getItem('scoreSpan') !== null) {
+    score = localStorage.getItem('scoreSpan');
+    document.getElementById('scoreSpan').innerHTML = score;
+  }
 }
