@@ -151,12 +151,17 @@ hr {
 	text-align: center
 }
 
+.footer p {
+	align: center
+	text-align: center
+}
+
 .footer hr {
 	color: #9E9909
 }
 
 #redbutton {
-	display:inline
+	display:inline;
 	width: 20px;
 	height: 20px;
 }
