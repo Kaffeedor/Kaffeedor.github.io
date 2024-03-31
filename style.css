@@ -70,7 +70,8 @@ hr {
 .header {
 	position: relative;
 	overflow: hidden;
-	text-align: center;
+	text-align: left;
+	width: "50%";
 }
 
 .header img {
@@ -87,7 +88,7 @@ hr {
 }
 
 .header h3 {
-	text-align: center;
+	text-align: left;
    	color: #e64093;
    	font-size: 24px;
 }
