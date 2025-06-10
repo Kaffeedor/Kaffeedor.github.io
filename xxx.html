@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Wurm-Leben-Simulation – Features & Steuerung</title>
+  <style>
+    body {
+      background: #181e22;
+      color: #f0f0ff;
+      font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #222836cc;
+      border-radius: 18px;
+      box-shadow: 0 0 32px #000a, 0 0 0 2px #3a3a4a;
+      padding: 36px 40px 32px 40px;
+    }
+    h1, h2, h3 {
+      font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+      color: #e28edb;
+      letter-spacing: 2px;
+      margin-top: 0;
+    }
+    h2 {
+      color: #8ecae6;
+      border-bottom: 1px solid #444a5a;
+      padding-bottom: 4px;
+      margin-bottom: 18px;
+    }
+    h3 {
+      color: #b6aaff;
+      margin-top: 32px;
+    }
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 18px;
+    }
+    li {
+      margin-bottom: 7px;
+    }
+    .feature {
+      color: #b6aaff;
+    }
+    .control {
+      color: #8ecae6;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      font-size: 1.08em;
+    }
+    .genetik {
+      color: #e28edb;
+    }
+    .importexport {
+      color: #f7d774;
+    }
+    .section {
+      margin-bottom: 36px;
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #8ecae6 0%, #e28edb 100%);
+      color: #181e22;
+      border-radius: 8px;
+      padding: 2px 10px;
+      font-size: 0.95em;
+      margin-right: 8px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Wurm-Leben-Simulation <span class="badge">Features & Steuerung</span></h1>
+    <div class="section">
+      <h2>Features</h2>
+      <ul>
+        <li class="feature">Prozedurale Welt mit Biomen: <span style="color:#8ecae6">Gras, Erde, Wasser, Stein, Kristall, Pilzflächen</span></li>
+        <li class="feature">Verschiedene Nahrungstypen: <span style="color:#f7d774">Standard, Pilz, Kristall</span> – mit eigenen Effekten</li>
+        <li class="feature">Würmer mit Genetik: <span style="color:#e28edb">Farbe, Größe, Geschwindigkeit, Sichtweite, Aggression, Kannibalismus, Terrain- und Nahrungsvorlieben</span></li>
+        <li class="feature">Mutation &amp; Evolution: Nachkommen erben und mutieren Gene</li>
+        <li class="feature">Spezies-Cluster: Ähnliche Würmer werden gruppiert, Top-Spezies werden angezeigt</li>
+        <li class="feature">Tag/Nacht-Zyklus: Beeinflusst Verhalten und Aktivität</li>
+        <li class="feature">Statistiken &amp; Time Series: Population, Nahrungstypen, Präferenzen als Graphen</li>
+        <li class="feature">Sidebar mit Legende: Erklärung aller visuellen Merkmale und Gen-Effekte</li>
+        <li class="feature">Interaktive Tooltips: Infos zu Würmern und Nahrung per Maus</li>
+        <li class="feature">Zoom &amp; Kamera: Mit Tasten, Mausrad und Drag steuerbar</li>
+        <li class="feature">Buttons: Pause, Neustart, Zoom, <span class="importexport">Import/Export</span></li>
+        <li class="feature">Performance-Optimierung: Zeichnet nur sichtbaren Bereich</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Steuerung</h2>
+      <ul>
+        <li><span class="control">T</span>: Terrain an/aus</li>
+        <li><span class="control">N</span>: Nahrung an/aus</li>
+        <li><span class="control">W</span>: Würmer an/aus</li>
+        <li><span class="control">S</span>: Statistiken an/aus</li>
+        <li><span class="control">R</span>: Neustart</li>
+        <li><span class="control">SPACE</span>: Nahrung hinzufügen</li>
+        <li><span class="control">F11</span>: Fullscreen</li>
+        <li><span class="control">P</span>: Pause</li>
+        <li><span class="control">+/-</span>: Zoom</li>
+        <li><span class="control">Pfeiltasten</span>: Kamera bewegen</li>
+        <li><span class="control">Mausrad</span>: Zoom</li>
+        <li><span class="control">Rechte Maustaste</span>: Kamera ziehen</li>
+        <li><span class="control">Sidebar-Buttons</span>: Pause, Neustart, Zoom, Import/Export</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Genetik &amp; Verhalten</h2>
+      <ul>
+        <li class="genetik">Form: Größe % 3 (Kreis, Ellipse, Rechteck)</li>
+        <li class="genetik">Farbe: Genfarbe (sanft, pastellig)</li>
+        <li class="genetik">Glow: Hohe Energie oder Jagdmodus</li>
+        <li class="genetik">Transparenz: Schwacher Zustand</li>
+        <li class="genetik">Nahrungstyp-Präferenz: Sucht bevorzugt bestimmten Nahrungstyp</li>
+        <li class="genetik">Aggression: Jagt andere Würmer</li>
+        <li class="genetik">Kannibalismus: Frisst andere Würmer</li>
+        <li class="genetik">Sichtweite: Erkennt Nahrung/Beute weiter entfernt</li>
+        <li class="genetik">Geschwindigkeit: Bewegt sich schneller</li>
+        <li class="genetik">Tag/Nacht: Nachts weniger aktiv, weniger aggressiv</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Import/Export</h2>
+      <ul>
+        <li class="importexport">Speichere und lade den kompletten Simulationszustand als JSON (Buttons in der Sidebar).</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Sonstiges</h2>
+      <ul>
+        <li>Performance: Optimiert für große Welten, nur sichtbarer Bereich wird gezeichnet</li>
+        <li>Modularer Code: Einfach erweiterbar für neue Gene, Biome, Nahrungstypen, etc.</li>
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; 2024 Wurm-Leben-Simulation &mdash; Design: <span style="color:#e28edb">Futuristisch &amp; Pastell</span>
+    </div>
+  </div>
+</body>
+</html> 
